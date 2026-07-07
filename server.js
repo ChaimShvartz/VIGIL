@@ -41,7 +41,7 @@ server.on("request", (req, res) => {
             }
         }
 
-        res.status(404).send("Page not found");
+        res.status(404).send({success: false, message: "Path not found"});
     });
 });
 
